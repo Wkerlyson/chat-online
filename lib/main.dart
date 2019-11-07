@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 void main() {
   Firestore.instance
-      .collection("test")
-      .document("test")
-      .setData({'test': 'test'});
+      .collection('messages')
+      .document('msg1')
+      .setData({'from': 'Daniel', 'text': 'Hello'});
 
   runApp(MyApp());
 }
